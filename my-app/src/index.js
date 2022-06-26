@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './scss/main.scss';
-import Navigation from "./Navigation";
+import Navigation from "./Components/Navigation";
+import Header from "./Components/Header";
 
 
 
@@ -14,7 +15,7 @@ root.render(
 
 
   <React.StrictMode>
-
+    <Header/>
     <Navigation/>
 
   </React.StrictMode>

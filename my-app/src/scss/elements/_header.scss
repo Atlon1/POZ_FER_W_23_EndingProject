@@ -1,15 +1,58 @@
- header {
-  background-color: blue;
-  .wrapper__navigation {
+@import "src/scss/setings/fonts";
+
+.header {
+  font-family: $font-text;
+  font-weight: 600;
+  background-color: $color-nav;
+  height: 70px;
+  border-bottom: solid 2px #5B605F;
+  color: $color-text-nav;
+
+  .wrapper__header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    .navigation__h1 {
+    margin-right: 136px;
+    margin-left: 136px;
 
-    }
+    .header__row {
+      display: flex;
+      padding: 10px;
+      margin: 5px;
+      .header__row__firstContainer {
+        display: flex;
 
-    .navigation__list_container {
+        .openShop {
 
+          .openShop__icon {
+
+          }
+
+          .openShop__whenOpen {
+
+          }
+        }
+
+        .telephone {
+          .telephone__icon {
+
+          }
+
+          .telephone__number {
+            color: $color-text-nav;
+          }
+        }
+
+        .location {
+          .location__icon {
+
+          }
+
+          .location__adress {
+
+          }
+        }
+      }
     }
   }
 }
