@@ -6,7 +6,7 @@ const Navigation = () => {
     return (
 
         <div className='navigation'>
-            <div className='wrapper__navigation'>
+            <div className='wrapper wrapper__navigation'>
                 <a href='#' className='navigation__logo'>
                     <img className='navigation__logo__image' src='../images/LOGO.png' style={{width:'247px',height:'70px'}} alt='SekretPiekna'/>
                 </a>

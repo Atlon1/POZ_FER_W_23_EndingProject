@@ -6,23 +6,22 @@
   background-color: white;
   height: 70px;
   border-bottom: solid 2px #5B605F;
+  display: flex;
+
 
   .wrapper__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 136px;
-    margin-left: 136px;
-
-
+    margin-right: 80px;
+    margin-left: 80px;
     .navigation__logo {
 
     }
 
     .navigation__list__container {
       display: flex;
-      text-decoration: none;
-      color: black;
+
 
       .list__item {
         padding: 10px;

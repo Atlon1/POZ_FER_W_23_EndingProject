@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <header className='header'>
-            <div className='wrapper__header'>
+            <div className='wrapper wrapper__header'>
                 <div className='header__row'>
                     <div className='header__row__firstContainer'>
                         <div className='openShop'>
