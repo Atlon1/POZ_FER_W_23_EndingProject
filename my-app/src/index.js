@@ -5,23 +5,19 @@ import reportWebVitals from './reportWebVitals';
 import './scss/main.scss';
 import Navigation from "./Components/Navigation";
 import Header from "./Components/Header";
-
-
+import SectionImage from "./Components/SectionImage";
+import SectionSlider from "./Components/SectionSlider";
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-
-  <React.StrictMode>
-    <Header/>
-    <Navigation/>
-
-  </React.StrictMode>
+        <>
+        <Header/>
+        <Navigation/>
+        <SectionSlider/>
+</>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

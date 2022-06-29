@@ -1,29 +1,36 @@
 @import "src/scss/setings/fonts";
+@import "src/scss/setings/mixins";
+@import "src/scss/setings/colors";
 
 .navigation {
   font-family: $font-text;
   font-weight: 600;
   background-color: white;
-  height: 70px;
-
-  display: flex;
+  height: 80px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 
 
   .wrapper__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
 
-    .navigation__logo__image {
-      border-radius: 30%;
-      padding: 15px;
-    }
 
     .navigation__list__container {
-      display: flex;
 
 
       .list__item {
+        padding: 0 26px;
+      }
+
+      &:last-child {
+        padding: 0;
+      }
+
+
+      .list__link {
         padding: 10px;
         margin-left: 10px;
         margin-right: 10px;
@@ -32,13 +39,98 @@
 
       }
 
-      .list__item:hover {
-        border-bottom: solid 2px rgba(250, 163, 146, 1);
+      .list__link:hover {
+        padding: 20px;
+        border-bottom: solid 3px rgba(250, 163, 146, 1);
         transform: translate(-20%, 20%);
-
-
       }
     }
+
+    .navigation__list__container {
+
+      display: flex;
+
+      @include mobile {
+        position: absolute;
+        left: 0;
+        top: 95px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+
+        .list__item {
+          padding: 0;
+        }
+
+        .list__item__link {
+          display: block;
+          padding: 14px 20px;
+        }
+      }
+    }
+
+    .navigation__logo__image {
+      border-radius: 30%;
+      padding: 20px;
+
+    }
+
+    .menu__btn {
+      display: none;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+
+      @include mobile {
+        &:checked {
+          ~ .header__nav {
+            display: flex;
+          }
+
+          ~ .menu__toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+
+              &:nth-child(2) {
+                opacity: 0;
+              }
+
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu__toggle {
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $color-main;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+
   }
 }
 
