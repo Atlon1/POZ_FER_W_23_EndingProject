@@ -1,6 +1,6 @@
-@import "src/scss/setings/fonts";
-@import "src/scss/setings/mixins";
-@import "src/scss/setings/colors";
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
 
 .navigation {
   font-family: $font-text;
@@ -53,20 +53,27 @@
       @include mobile {
         position: absolute;
         left: 0;
-        top: 95px;
+        top: 158px;
         flex-direction: column;
         background-color: white;
         width: 100%;
         padding-bottom: 20px;
         display: none;
+        text-align: right;
+
+
 
         .list__item {
-          padding: 0;
+          padding: 10px;
         }
 
         .list__item__link {
           display: block;
           padding: 14px 20px;
+        }
+        .list__link:hover {
+          padding: 5px;
+          border-bottom: solid 3px rgba(250, 163, 146, 1);
         }
       }
     }
@@ -104,6 +111,12 @@
                 transform: rotate(-45deg) translate(2px, -5px);
               }
             }
+          }
+          & + label + .navigation__list__container {
+            display: flex;
+            z-index: 9999;
+            background-color: #ffffff;
+            padding: 5px;
           }
         }
       }

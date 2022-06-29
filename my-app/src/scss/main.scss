@@ -18,9 +18,11 @@ html, body {
   display: flex;
 }
 
-@import "setings/fonts";
-@import "setings/colors";
+@import "settings/fonts";
+@import "settings/colors";
 
 @import "elements/navigation";
 @import "elements/header";
+@import "elements/sectionSlider";
+@import "elements/homeSection";
 

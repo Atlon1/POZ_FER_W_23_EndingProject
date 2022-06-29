@@ -3,8 +3,11 @@ import React from "react";
 import TinySlider from "tiny-slider-react";
 import "tiny-slider/dist/tiny-slider.css";
 
-import Slide1 from "./slide1.jpg";
-import Slide2 from "./slide2.jpg";
+import Slide1 from "../images/slide3.jpg";
+import Slide2 from "../images/slide1.jpg";
+import Slide3 from "../images/slide5.jpg";
+
+import '../scss/main.scss';
 
 
 const SectionSlider = () => {
@@ -17,12 +20,12 @@ const SectionSlider = () => {
 
     const imgStyles = {
         width: "100%",
-        height: "320px",
+        height: "400px",
         objectFit: "cover"
     };
 
     const imgs = [
-        Slide1, Slide2, Slide2
+        Slide1, Slide2, Slide3
     ];
 
     const loadingImage =
@@ -36,23 +39,24 @@ const SectionSlider = () => {
         items: 1,
         gutter: 5,
         autoplay: true,
-        speed: 300,
+        speed: 400,
         responsive: {
             420: {
-                items: 2
+                items: 1
             }
         }
     };
 
 
     return (
+
         <>
             <TinySlider settings={settings}>
                 {imgs.map((el, index) => (
                     <div key={index} style={{position: "relative"}}>
                         <img
                             className={`tns-lazy-img`}
-                            src= {loadingImage}
+                            src={loadingImage}
                             data-src={el}
                             alt=""
                             style={imgStyles}
@@ -60,7 +64,13 @@ const SectionSlider = () => {
                     </div>
                 ))}
             </TinySlider>
-
+            <div className='wrapper wrapper__sigin'>
+                <div className='sigin__container'>
+                    <h1> Odiwedź nasze centrum relaksu!</h1>
+                    <p className='sigin__content'> Dokonaj rezerwacji i zapisz sie!</p>
+                    <a href='#' className='sigin__button'>Zrób rezerwacje</a>
+                </div>
+            </div>
         </>
     )
 

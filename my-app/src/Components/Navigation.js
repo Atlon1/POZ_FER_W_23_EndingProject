@@ -18,7 +18,7 @@ const Navigation = () => {
                         <span> </span>
                     </label>
                 <ul className='navigation__list__container'>
-                    <li className='list__item'><a className='list__link' href="/">HOME</a></li>
+                    <li className='list__item'><a className='list__link' href="#home">HOME</a></li>
                     <li className='list__item'><a className='list__link' href="/">USŁUGI</a></li>
                     <li className='list__item'><a className='list__link' href="/">KONTAKT</a></li>
                     <li className='list__item'><a className='list__link' href="/">BLOG</a></li>
