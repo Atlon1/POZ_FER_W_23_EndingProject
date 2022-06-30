@@ -1,0 +1,29 @@
+@import "generic/reset";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper{
+  max-width: 1626px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+@import "settings/fonts";
+@import "settings/colors";
+
+
+@import "elements/navigation";
+@import "elements/header";
+@import "elements/sectionSlider";
+@import "elements/homeSection";
+@import "elements/aboutUS";

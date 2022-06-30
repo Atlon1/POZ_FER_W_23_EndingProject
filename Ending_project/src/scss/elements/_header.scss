@@ -1,0 +1,94 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
+
+
+.header {
+  font-family: $font-text;
+  font-weight: 600;
+  background-color: $color-nav;
+  height: 70px;
+  color: $color-text-nav;
+  display: flex;
+  font-size: 15px;
+
+  .wrapper__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .header__row__2{
+      display: flex;
+      .facebook__icon{
+        padding-right: 10px;
+        font-size: 20px;
+
+      }
+      .instagram__icon {
+        padding-right: 10px;
+        font-size: 20px;
+      }
+    }
+
+
+    .header__row {
+      display: flex;
+
+      margin: 5px;
+
+      .header__row__firstContainer {
+        display: flex;
+        justify-content: space-between;
+
+
+        .openShop {
+          padding-right: 15px;
+          padding-left: 15px;
+          @include mobile {
+            display: none;
+          }
+
+          .openShop__icon {
+            padding-right: 10px;
+            color: $color-main;
+          }
+
+          .openShop__whenOpen {
+
+          }
+        }
+
+        .telephone {
+          padding-right: 15px;
+          padding-left: 15px;
+
+          .telephone__icon {
+            padding-right: 10px;
+            color: $color-main;
+          }
+
+          .telephone__number {
+            color: $color-text-nav;
+          }
+        }
+
+        .location {
+          @include mobile {
+            display: none;
+          }
+
+          .location__icon {
+            padding-right: 10px;
+            color: $color-main;
+          }
+
+          .location__adress {
+
+          }
+        }
+      }
+    }
+
+  }
+}

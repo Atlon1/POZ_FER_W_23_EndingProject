@@ -1,0 +1,54 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
+
+button {
+  display: none;
+}
+
+.tns-controls {
+  padding: 3px;
+  z-index: 10;
+
+  button {
+    display: none;
+  }
+
+}
+
+.wrapper__sigin {
+  display: flex;
+  justify-content: center;
+  font-family: $font-text;
+  margin-top: 15px;
+  position: absolute;
+  top: 250px;
+
+  .sigin__container {
+
+    border-top: 2px solid $color-main;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 2px solid $color-main;
+    margin-bottom: 20px;
+
+    & h1 {
+      font-size: 2.5em;
+      font-weight: 800;
+    }
+
+    .sigin__content {
+      padding: 15px;
+    }
+
+    .sigin__button {
+      padding: 20px;
+      background-color: $color-main;
+      color: white;
+    }
+  }
+}
