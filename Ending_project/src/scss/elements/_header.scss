@@ -2,7 +2,6 @@
 @import "../settings/mixins";
 @import "../settings/colors";
 
-
 .header {
   font-family: $font-text;
   font-weight: 600;
@@ -17,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
 
-
     .header__row__2{
       display: flex;
       .facebook__icon{
@@ -31,16 +29,13 @@
       }
     }
 
-
     .header__row {
       display: flex;
-
       margin: 5px;
 
       .header__row__firstContainer {
         display: flex;
         justify-content: space-between;
-
 
         .openShop {
           padding-right: 15px;
@@ -52,10 +47,6 @@
           .openShop__icon {
             padding-right: 10px;
             color: $color-main;
-          }
-
-          .openShop__whenOpen {
-
           }
         }
 
@@ -81,10 +72,6 @@
           .location__icon {
             padding-right: 10px;
             color: $color-main;
-          }
-
-          .location__adress {
-
           }
         }
       }

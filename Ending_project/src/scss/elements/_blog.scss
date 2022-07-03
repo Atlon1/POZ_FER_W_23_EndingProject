@@ -1,0 +1,63 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
+
+.blog {
+  margin-top: 100px;
+  font-family: $font-text;
+
+  .wrapper {
+    justify-content: center;
+  }
+
+  .blog__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .blog__header {
+      margin-top: 50px;
+      font-weight: 800;
+      font-size: 3rem;
+      padding-bottom: 15px;
+      padding-left: 45px;
+      padding-right: 45px;
+      border-bottom: 2px solid $color-main;
+      @include tablet {
+        font-size: 2em;
+      }
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    .blog__plan {
+      font-family: $font-cursive;
+      font-size: 3em;
+      color: $color-main;
+      @include tablet {
+       font-size: 2em;
+      }
+    }
+  }
+  .blog__content {
+    display: flex;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  .blog__firstNews {
+      margin: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    img {
+      border: solid white 10px;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 15px;
+    }
+  }
+}

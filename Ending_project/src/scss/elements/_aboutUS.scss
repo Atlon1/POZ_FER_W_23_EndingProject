@@ -2,15 +2,204 @@
 @import "../settings/mixins";
 @import "../settings/colors";
 
-.aboutUS {
-  display: flex;
-   .wrapper {
+.aboutUs {
+  font-family: $font-text;
+  margin-top:50px;
+  @include tablet{
+    transform: scale(0.95);
+  }
 
-    .aboutUs__container {
 
-       .aboutUs__img {
-        width: 200px;
-        height: 300px;
+  .wrapper {
+    padding: 20px;
+    justify-content: center;
+    @include tablet{
+      padding: 0;
+      transform: scale(0.9);
+    }
+    @include mobile {
+      flex-direction: column;
+      transform: scale(1);
+    }
+
+    .aboutUs__container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 1%;
+      @include tablet{
+        transform: scale(0.85);
+      }
+      @include mobile {
+        transform: scale(1);
+        margin-bottom: 60px;
+      }
+
+      .aboutUs__img1 {
+        width: 20em;
+        height: 22.5em;
+        border: 6px solid white;
+        transition-duration: 1.5s;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .aboutUs__img1:hover {
+        background-color: $color-main;
+        opacity: 0.7;
+        transform: scale(1.1);
+        z-index: 2;
+      }
+
+      .aboutUs__content1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        position: absolute;
+        bottom: -60px;
+        z-index: 3;
+
+        .aboutUs__header1 {
+          padding-top: 35px;
+          font-family: $font-cursive;
+          color: $color-main;
+          font-size: 2em;
+
+        }
+
+        .aboutUs__text1 {
+          padding-bottom: 21px;
+        }
+
+        .aboutUs__button1 {
+          padding: 15px 77px;
+          background-color: $color-main;
+          color: white;
+        }
+      }
+    }
+    .aboutUs__container2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 1%;
+      @include tablet{
+        transform: scale(0.85);
+      }
+      @include mobile {
+        transform: scale(1);
+        margin-bottom: 60px;
+      }
+
+      .aboutUs__img2 {
+        width: 20em;
+        height: 22.5em;
+        border: 6px solid white;
+        transition-duration: 1.5s;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .aboutUs__img2:hover {
+        background-color: $color-main;
+        opacity: 0.7;
+        transform: scale(1.1);
+        z-index: 2;
+      }
+
+      .aboutUs__content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        position: absolute;
+        bottom: -60px;
+        z-index: 3;
+
+        .aboutUs__header2 {
+          padding-top: 35px;
+          font-family: $font-cursive;
+          color: $color-main;
+          font-size: 2em;
+
+        }
+
+        .aboutUs__text2 {
+          padding-bottom: 21px;
+        }
+
+        .aboutUs__button2 {
+          padding: 15px 77px;
+          background-color: $color-sec-main;
+          color: white;
+        }
+      }
+    }
+    .aboutUs__container3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding: 1%;
+      @include tablet{
+        transform: scale(0.85);
+      }
+      @include mobile {
+        transform: scale(1);
+        margin-bottom: 60px;
+      }
+
+      .aboutUs__img3 {
+        width: 20em;
+        height: 22.5em;
+        border: 6px solid white;
+        transition-duration: 1.5s;
+        margin: 0 auto;
+        display: block;
+      }
+
+      .aboutUs__img3:hover {
+        background-color: $color-main;
+        opacity: 0.7;
+        transform: scale(1.1);
+        z-index: 2;
+      }
+
+      .aboutUs__content3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        width: 250px;
+        background-color: white;
+        position: absolute;
+        bottom: -60px;
+        z-index: 3;
+
+        .aboutUs__header3 {
+          padding-top: 35px;
+          font-family: $font-cursive;
+          color: $color-main;
+          font-size: 2em;
+
+        }
+
+        .aboutUs__text3 {
+          padding-bottom: 21px;
+        }
+
+        .aboutUs__button3 {
+          padding: 15px 77px;
+          background-color: $color-main;
+          color: white;
+        }
       }
     }
   }

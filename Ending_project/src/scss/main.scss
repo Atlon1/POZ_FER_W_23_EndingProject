@@ -9,6 +9,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  background-color: #f8f8f9;
 }
 
 .wrapper{
@@ -21,9 +22,12 @@ html, body {
 @import "settings/fonts";
 @import "settings/colors";
 
-
 @import "elements/navigation";
 @import "elements/header";
 @import "elements/sectionSlider";
 @import "elements/homeSection";
 @import "elements/aboutUS";
+@import "elements/services&pricing";
+@import "elements/contact";
+@import "elements/blog";
+@import "elements/footer";

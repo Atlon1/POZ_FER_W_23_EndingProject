@@ -1,0 +1,32 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
+
+.footer {
+  font-family: $font-text;
+  background-color: white;
+  .wrapper {
+    justify-content: center;
+    width: 100%;
+
+  }
+  .footer__container {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer__secColumn {
+    a {
+      color: white;
+      padding: 10px;
+      margin: 10px;
+      background-color: $color-text-nav;
+      border-radius: 50%;
+      transition: 1s;
+    }
+    a:hover {
+      background-color: $color-main;
+    }
+  }
+}

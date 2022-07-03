@@ -1,0 +1,82 @@
+@import "../settings/fonts";
+@import "../settings/mixins";
+@import "../settings/colors";
+
+.service {
+  margin-top: 150px;
+  font-family: $font-text;
+  background-color: white;
+
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .service__plan {
+      margin-top: 50px;
+      font-family: $font-cursive;
+      color: $color-main;
+      font-size: 3em;
+    }
+
+    .service__header {
+      margin-top: 50px;
+      font-weight: 800;
+      font-size: 3rem;
+      padding-bottom: 15px;
+      padding-left: 45px;
+      padding-right: 45px;
+      border-bottom: 2px solid $color-main;
+    }
+  }
+
+  .first__row {
+    display: flex;
+    flex-direction: row;
+    @include tablet {
+      transform: scale(0.85);
+    }
+    @include mobile {
+      flex-direction: column;
+      transform: scale(1);
+    }
+
+  }
+
+  .row__content {
+    display: flex;
+  }
+  .service__container {
+    margin-bottom: 100px;
+  }
+
+  .first__row__service {
+    margin-top: 50px;
+    display: flex;
+    font-size: 1.5em;
+    padding: 10px;
+    flex-direction: column;
+
+    .service__name {
+      padding-left: 40px;
+
+    }
+
+    .service__dots {
+      padding-left: 10px;
+      padding-right: 10px;
+      letter-spacing: 5px;
+    }
+
+    .service__price {
+      color: $color-main;
+      font-weight: 800;
+
+    }
+  }
+
+  .service__description {
+    padding-left: 50px;
+    font-size: 15px;
+  }
+}

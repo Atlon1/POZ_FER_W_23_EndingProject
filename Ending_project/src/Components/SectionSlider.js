@@ -1,18 +1,13 @@
 import React from "react";
 
 import TinySlider from "tiny-slider-react";
+import '../scss/main.scss';
 import "tiny-slider/dist/tiny-slider.css";
-
 import Slide1 from "../images/slide3.jpg";
 import Slide2 from "../images/slide1.jpg";
 import Slide3 from "../images/slide5.jpg";
 
-import '../scss/main.scss';
-
-
 const SectionSlider = () => {
-
-
     const styles = {
         fontFamily: "sans-serif",
         textAlign: "center"
@@ -47,9 +42,7 @@ const SectionSlider = () => {
         }
     };
 
-
     return (
-
         <>
             <TinySlider settings={settings}>
                 {imgs.map((el, index) => (
@@ -73,8 +66,6 @@ const SectionSlider = () => {
             </div>
         </>
     )
-
-
 }
 
 export default SectionSlider;

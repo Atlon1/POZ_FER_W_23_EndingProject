@@ -7,10 +7,12 @@
   position: relative;
   display: flex;
   justify-content: center;
+  background-color: white;
 
   .wrapper {
 
     justify-content: center;
+    margin-bottom: 50px;
 
     .home__container {
       margin-top: 50px;
@@ -22,7 +24,7 @@
         margin-top: 50px;
         font-family: $font-cursive;
         color: $color-main;
-        font-size: 2.5em;
+        font-size: 3em;
       }
 
       & h1 {

@@ -1,12 +1,10 @@
 import React from "react";
-import '../scss/main.scss';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faClock, faTeletype, faSignsPost } from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons'
-
+import '../scss/main.scss';
 
 const Header = () => {
-
     const elementClock = <FontAwesomeIcon icon={faClock}/>
     const elementTel = <FontAwesomeIcon icon={faTeletype}/>
     const elementGps = <FontAwesomeIcon icon={faSignsPost}/>
@@ -14,7 +12,6 @@ const Header = () => {
     const elementInsta = <FontAwesomeIcon icon={faInstagram}/>
 
     return (
-
         <header className='header'>
             <div className='wrapper wrapper__header'>
                 <div className='header__row'>
@@ -32,8 +29,6 @@ const Header = () => {
                             <span className='location__adress'> Grodzisk wielkoplski</span>
                         </div>
                     </div>
-
-
                 </div>
                 <div className='header__row__2'>
                     <a href='#' className='facebook__icon'>{elementFb} </a>
