@@ -5,7 +5,7 @@ const Blog = () => {
 
 
     return (
-        <section className='blog'>
+        <section className='blog' id="blog">
             <div className='wrapper'>
                 <div className='blog__container'>
                     <span className='blog__plan'> Co u nas słychać ?</span>

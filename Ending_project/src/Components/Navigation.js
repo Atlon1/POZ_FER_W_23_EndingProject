@@ -1,5 +1,4 @@
 import React from "react";
-import {Route, Link} from "react-router-dom";
 import '../scss/main.scss';
 
 const Navigation = () => {
@@ -17,10 +16,10 @@ const Navigation = () => {
                         <span />
                     </label>
                 <ul className='navigation__list__container'>
-                    <li className='list__item'><a className='list__link' href="#Home">HOME</a></li>
+                    <li className='list__item'><a className='list__link' href="#home">HOME</a></li>
                     <li className='list__item'><a className='list__link' href="#service">USŁUGI</a></li>
-                    <li className='list__item'><a className='list__link' href="/">BLOG</a></li>
-                    <li className='list__item'><a className='list__link' href="/">Kontakt</a></li>
+                    <li className='list__item'><a className='list__link' href="#blog">BLOG</a></li>
+                    <li className='list__item'><a className='list__link' href="#contact">KONTAKT</a></li>
                 </ul>
             </div>
         </div>

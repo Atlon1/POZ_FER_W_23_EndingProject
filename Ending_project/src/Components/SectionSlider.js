@@ -61,7 +61,7 @@ const SectionSlider = () => {
                 <div className='sigin__container'>
                     <h1> Odwiedź nasze centrum relaksu!</h1>
                     <p className='sigin__content'> Dokonaj rezerwacji i zapisz sie!</p>
-                    <a href='#' className='sigin__button'>Zrób rezerwacje</a>
+                    <a href='../boking.js' className='sigin__button'>Zrób rezerwacje</a>
                 </div>
             </div>
         </>

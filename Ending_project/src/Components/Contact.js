@@ -7,7 +7,7 @@ const Contact = () => {
     const elementClock = <FontAwesomeIcon icon={faClock}/>
     const elementLocation = <FontAwesomeIcon icon={faLocation}/>
 
-    return (<section className='contact'>
+    return (<section className='contact' id="contact">
             <div className='wrapper'>
                 <div className='contact__container'>
                     <div className='contact__open'>

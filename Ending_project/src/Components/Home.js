@@ -3,7 +3,7 @@ import '../scss/main.scss';
 
 const Home = () => {
     return (
-        <section className='home'>
+        <section className='home' id="home">
             <div className='wrapper'>
                 <div className='home__container'>
                     <div className='home__welcome'> Witaj u nas!</div>

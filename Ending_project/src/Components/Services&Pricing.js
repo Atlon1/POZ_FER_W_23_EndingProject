@@ -4,7 +4,7 @@ import '../scss/main.scss';
 const ServicesPricing = () => {
 
     return (
-        <section className='service'>
+        <section className='service' id='service'>
             <div className='wrapper'>
                 <span className='service__plan'> Katalog cenowy</span>
                 <h1 className='service__header'> Usługi & Ceny</h1>

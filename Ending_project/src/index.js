@@ -12,6 +12,7 @@ import Footer from "./Components/Footer";
 import './scss/main.scss';
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
