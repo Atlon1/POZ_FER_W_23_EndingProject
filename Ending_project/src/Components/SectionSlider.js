@@ -6,6 +6,7 @@ import "tiny-slider/dist/tiny-slider.css";
 import Slide1 from "../images/slide3.jpg";
 import Slide2 from "../images/slide1.jpg";
 import Slide3 from "../images/slide5.jpg";
+import {Link} from "react-router-dom";
 
 const SectionSlider = () => {
     const styles = {
@@ -61,7 +62,10 @@ const SectionSlider = () => {
                 <div className='sigin__container'>
                     <h1> Odwiedź nasze centrum relaksu!</h1>
                     <p className='sigin__content'> Dokonaj rezerwacji i zapisz sie!</p>
-                    <a href='../boking.js' className='sigin__button'>Zrób rezerwacje</a>
+                    <div className='sigin__button'>
+                        <Link to="/reservation">Zrób rezerwacje</Link>
+                    </div>
+                    {/*<a href='../boking.js' className='sigin__button'>Zrób rezerwacje</a>*/}
                 </div>
             </div>
         </>

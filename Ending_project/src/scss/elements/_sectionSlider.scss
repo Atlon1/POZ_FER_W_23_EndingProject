@@ -26,7 +26,7 @@ button {
   font-family: $font-text;
   margin-top: 15px;
   position: absolute;
-  top: 250px;
+  top: 275px;
 
   .sigin__container {
 
@@ -53,6 +53,11 @@ button {
       padding: 20px;
       background-color: $color-main;
       color: white;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }

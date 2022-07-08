@@ -16,13 +16,20 @@
     justify-content: space-between;
     align-items: center;
 
-    .header__row__2{
+    .header__row__2 {
       display: flex;
-      .facebook__icon{
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      .facebook__icon {
         padding-right: 10px;
         font-size: 20px;
 
       }
+
       .instagram__icon {
         padding-right: 10px;
         font-size: 20px;
@@ -76,6 +83,5 @@
         }
       }
     }
-
   }
 }

@@ -1,4 +1,5 @@
-import '../scss/main.scss'
+import '../scss/main.scss';
+import {Link} from "react-router-dom";
 
 const AboutUs = () => {
     return (
@@ -9,7 +10,9 @@ const AboutUs = () => {
                     <div className="aboutUs__content1">
                         <h1 className='aboutUs__header1'>O nas!</h1>
                         <p className='aboutUs__text1'> Kilka informacji o zakładzie</p>
-                        <a href='#' className='aboutUs__button1'>Czytaj więcej</a>
+                        <div className='aboutUs__button1'>
+                            <Link to='/information'>Czytaj więcej</Link>
+                        </div>
                     </div>
                 </div>
                 <div className='aboutUs__container2'>
@@ -17,7 +20,9 @@ const AboutUs = () => {
                     <div className="aboutUs__content2">
                         <h1 className='aboutUs__header2'>Usługi</h1>
                         <p className='aboutUs__text2'> Poznaj nasze ceny</p>
-                        <a href='#' className='aboutUs__button2'>Czytaj więcej</a>
+                        <div className='aboutUs__button2'>
+                            <Link to='/services'>Czytaj więcej</Link>
+                        </div>
                     </div>
                 </div>
                 <div className='aboutUs__container3'>
@@ -25,7 +30,9 @@ const AboutUs = () => {
                     <div className="aboutUs__content3">
                         <h1 className='aboutUs__header3'>Produkty</h1>
                         <p className='aboutUs__text3'>Kup u nas </p>
-                        <a href='#' className='aboutUs__button3'>Czytaj więcej</a>
+                        <div className='aboutUs__button3'>
+                            <Link to='/products'>Czytaj więcej</Link>
+                        </div>
                     </div>
                 </div>
             </div>

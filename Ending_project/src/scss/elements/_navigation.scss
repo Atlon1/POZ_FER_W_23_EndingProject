@@ -5,9 +5,12 @@
 .navigation {
   font-family: $font-text;
   font-weight: 600;
-  height: 80px;
+  height: 100px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
-
+  font-size: 1.25em;
+  @include tablet {
+    font-size: 0.9em;
+  }
 
   .wrapper__navigation {
     display: flex;
@@ -16,9 +19,7 @@
     padding-right: 15px;
     padding-left: 15px;
 
-
     .navigation__list__container {
-
 
       .list__item {
         padding: 0 26px;
@@ -28,7 +29,6 @@
         padding: 0;
       }
 
-
       .list__link {
         padding: 10px;
         margin-left: 10px;
@@ -36,17 +36,23 @@
         border-bottom: solid 2px lightgray;
         transition: 1s;
 
+        a {
+          color: black;
+          text-decoration: none;
+        }
       }
 
       .list__link:hover {
         padding: 20px;
         border-bottom: solid 3px rgba(250, 163, 146, 1);
-        transform: translate(-20%, 20%);
+        transform: translate(-10%, 10%);
+        @include mobile {
+          transform: translate(0);
+        }
       }
     }
 
     .navigation__list__container {
-
       display: flex;
 
       @include mobile {
@@ -59,8 +65,6 @@
         padding-bottom: 20px;
         display: none;
         text-align: right;
-
-
 
         .list__item {
           padding: 10px;
@@ -80,7 +84,6 @@
     .navigation__logo__image {
       border-radius: 30%;
       padding: 20px;
-
     }
 
     .menu__btn {
@@ -89,7 +92,6 @@
       top: -9999px;
       left: -9999px;
       opacity: 0;
-
       @include mobile {
         &:checked {
           ~ .header__nav {
@@ -111,6 +113,7 @@
               }
             }
           }
+
           & + label + .navigation__list__container {
             display: flex;
             z-index: 9999;
@@ -141,13 +144,5 @@
         display: block;
       }
     }
-
-
   }
-}
-
-
-a {
-  text-decoration: none;
-  color: black;
 }

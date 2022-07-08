@@ -5,6 +5,7 @@
 .aboutUs {
   font-family: $font-text;
   margin-top:50px;
+  margin-bottom: 100px;
   @include tablet{
     transform: scale(0.95);
   }
@@ -15,7 +16,7 @@
     justify-content: center;
     @include tablet{
       padding: 0;
-      transform: scale(0.9);
+      transform: scale(0.8);
     }
     @include mobile {
       flex-direction: column;
@@ -201,6 +202,10 @@
           color: white;
         }
       }
+    }
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }
