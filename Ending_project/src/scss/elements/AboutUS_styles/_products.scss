@@ -45,6 +45,7 @@
       }
 
     }
+
     .products__img {
       border: solid 10px white;
       height: 400px;
@@ -60,12 +61,14 @@
       }
     }
   }
+
   .products__backButton {
     padding: 25px;
     background-color: $color-main;
     text-align: center;
     font-size: 2em;
   }
+
   a {
     color: white;
   }

@@ -26,7 +26,7 @@ button {
   font-family: $font-text;
   margin-top: 15px;
   position: absolute;
-  top: 275px;
+  top: 375px;
 
   .sigin__container {
 
@@ -39,6 +39,9 @@ button {
     padding: 15px;
     border-bottom: 2px solid $color-main;
     margin-bottom: 20px;
+    @include mobile {
+      text-align: center;
+    }
 
     & h1 {
       font-size: 2.5em;

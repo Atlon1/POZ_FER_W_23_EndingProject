@@ -16,7 +16,7 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className='aboutUs__container2'>
-                    <img src={require('../images/usługi.jpg')} className='aboutUs__img2'/>
+                    <img src={require('../images/reka_adamsa.jpg')} className='aboutUs__img2'/>
                     <div className="aboutUs__content2">
                         <h1 className='aboutUs__header2'>Usługi</h1>
                         <p className='aboutUs__text2'> Poznaj nasze ceny</p>

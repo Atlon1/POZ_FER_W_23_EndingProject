@@ -6,22 +6,22 @@ const Navigation = () => {
     return (
         <div className='navigation'>
             <div className='wrapper wrapper__navigation'>
-                    <div className='navigation__logo'>
-                        <Link to='/'><img src={require('../images/../images/LOGO.png')} style={{
-                            width: '200px',
-                            height: '100px'
-                        }}/></Link>
-                    </div>
+                <div className='navigation__logo'>
+                    <Link to='/'><img src={require('../images/../images/LOGO.png')} style={{
+                        width: '200px',
+                        height: '100px'
+                    }}/></Link>
+                </div>
                 <input type='checkbox' className='menu__btn' id="menu__btn"/>
-                    <label htmlFor='menu__btn' className='menu__toggle'>
-                        <span />
-                        <span />
-                        <span />
-                    </label>
+                <label htmlFor='menu__btn' className='menu__toggle'>
+                    <span/>
+                    <span/>
+                    <span/>
+                </label>
                 <ul className='navigation__list__container'>
                     <li className='list__item'>
                         <div className='list__link'>
-                        <Link to='/'>HOME</Link>
+                            <Link to='/'>HOME</Link>
                         </div>
                     </li>
                     <li className='list__item'>

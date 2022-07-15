@@ -6,6 +6,8 @@ import "tiny-slider/dist/tiny-slider.css";
 import Slide1 from "../images/slide3.jpg";
 import Slide2 from "../images/slide1.jpg";
 import Slide3 from "../images/slide5.jpg";
+import slide4 from "../images/slide6.jpg";
+import slide5 from "../images/slide7.jpg";
 import {Link} from "react-router-dom";
 
 const SectionSlider = () => {
@@ -16,16 +18,16 @@ const SectionSlider = () => {
 
     const imgStyles = {
         width: "100%",
-        height: "400px",
+        height: "550px",
         objectFit: "cover"
     };
 
     const imgs = [
-        Slide1, Slide2, Slide3
+        Slide1, slide4, Slide2, slide5, Slide3
     ];
 
     const loadingImage =
-        Slide1;
+        Slide3;
 
     const settings = {
         lazyload: true,

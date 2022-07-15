@@ -1,6 +1,6 @@
 import React from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faClock, faTeletype, faSignsPost } from '@fortawesome/free-solid-svg-icons'
+import {faClock, faTeletype, faSignsPost} from '@fortawesome/free-solid-svg-icons'
 import {faFacebook, faInstagram} from '@fortawesome/free-brands-svg-icons'
 import '../scss/main.scss';
 

@@ -16,8 +16,8 @@
     flex-direction: row;
     text-align: center;
     @include mobile {
-    flex-direction: column;
-  }
+      flex-direction: column;
+    }
 
     .contact__open {
       display: flex;
@@ -48,6 +48,7 @@
     h1 {
       font-size: 3em;
     }
+
     a {
       color: $color-main;
     }
