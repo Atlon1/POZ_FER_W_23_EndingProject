@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/POZ_FER_W_23_EndingProject/static/css/main.0e21a526.css",
+    "main.js": "/POZ_FER_W_23_EndingProject/static/js/main.f49c4636.js",
+    "static/media/lipoliza_news2.jpg": "/POZ_FER_W_23_EndingProject/static/media/lipoliza_news2.c26859d0fd000e2d891e.jpg",
+    "static/media/rzeski_news3.jpg": "/POZ_FER_W_23_EndingProject/static/media/rzeski_news3.f4acf768f6fb6407b299.jpg",
+    "static/media/slide5.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide5.ae767e7c558afaf4da1d.jpg",
+    "static/media/slide3.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide3.e9ce5d1925f5e53c6cda.jpg",
+    "static/media/usta_news1.jpg": "/POZ_FER_W_23_EndingProject/static/media/usta_news1.86ab63a785978696ea20.jpg",
+    "static/media/slide2.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide2.6f5711b0bd1c71743a8b.jpg",
+    "static/media/slide1.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide1.79e5c9b124adb9ac1e11.jpg",
+    "static/media/oNas.jpg": "/POZ_FER_W_23_EndingProject/static/media/oNas.aeb8842ee97e4bc69dbf.jpg",
+    "static/media/usługi.jpg": "/POZ_FER_W_23_EndingProject/static/media/usługi.97e002123740e9aea8f1.jpg",
+    "static/media/slide6.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide6.a7aaf3b6aed847031a23.jpg",
+    "static/media/slide7.jpg": "/POZ_FER_W_23_EndingProject/static/media/slide7.d5a8fd142d9d4925ddf2.jpg",
+    "static/media/LOGO.png": "/POZ_FER_W_23_EndingProject/static/media/LOGO.22b91a8ac3ce04e20496.png",
+    "static/media/reka_adamsa.jpg": "/POZ_FER_W_23_EndingProject/static/media/reka_adamsa.3e4ecded16e3d140215e.jpg",
+    "index.html": "/POZ_FER_W_23_EndingProject/index.html",
+    "main.0e21a526.css.map": "/POZ_FER_W_23_EndingProject/static/css/main.0e21a526.css.map",
+    "main.f49c4636.js.map": "/POZ_FER_W_23_EndingProject/static/js/main.f49c4636.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e21a526.css",
+    "static/js/main.f49c4636.js"
+  ]
+}
