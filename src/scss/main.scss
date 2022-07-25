@@ -1,0 +1,39 @@
+@import "generic/reset";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f9;
+}
+
+.wrapper{
+  max-width: 1626px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+@import "settings/fonts";
+@import "settings/colors";
+
+@import "elements/navigation";
+@import "elements/header";
+@import "elements/sectionSlider";
+@import "elements/homeSection";
+@import "elements/aboutUS";
+@import "elements/services&pricing";
+@import "elements/contact";
+@import "elements/blog";
+@import "elements/footer";
+@import "elements/AboutUS_styles/information";
+@import "elements/AboutUS_styles/services";
+@import "elements/AboutUS_styles/products";
+@import "elements/Blog_styles/news1";
+@import "elements/Blog_styles/news2";
+@import "elements/Blog_styles/news3";

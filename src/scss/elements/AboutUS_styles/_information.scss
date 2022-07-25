@@ -1,0 +1,75 @@
+@import "../../settings/fonts";
+@import "../../settings/mixins";
+@import "../../settings/colors";
+
+.information {
+  font-family: $font-text;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+
+  .wrapper {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .information__container {
+      display: flex;
+      padding: 20px;
+
+      .information__text {
+        display: flex;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-family: $font-cursive;
+        color: $color-main;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.4em;
+        @include tablet {
+          font-size: 1em;
+        }
+        @include mobile {
+          font-size: 1.3em;
+        }
+      }
+
+    }
+
+    .information__img {
+      border: solid 10px white;
+      height: 400px;
+      width: 400px;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        display: flex;
+        align-items: center;
+      }
+
+      .information__img1 {
+        height: 400px;
+        width: 400px;
+      }
+    }
+  }
+
+  .information__backButton {
+    padding: 25px;
+    background-color: $color-main;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  a {
+    color: white;
+  }
+}

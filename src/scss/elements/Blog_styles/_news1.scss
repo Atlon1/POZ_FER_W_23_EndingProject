@@ -1,0 +1,81 @@
+@import "../../settings/fonts";
+@import "../../settings/mixins";
+@import "../../settings/colors";
+
+.news1 {
+  font-family: $font-text;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  position: relative;
+
+  .wrapper {
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+    .news1__container {
+      display: flex;
+      padding: 20px;
+      align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .news1__text {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      h1 {
+        font-family: $font-cursive;
+        color: $color-main;
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.4em;
+
+        @include tablet {
+          font-size: 1em;
+        }
+        @include mobile {
+          font-size: 1.3em;
+        }
+      }
+
+    }
+
+    .news1__img {
+      border: solid 10px white;
+      height: 400px;
+      width: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        display: flex;
+        align-items: center;
+      }
+
+      .news1__img1 {
+        height: 400px;
+        width: 400px;
+      }
+    }
+  }
+
+  .news1__backButton {
+    padding: 25px;
+    background-color: $color-main;
+    text-align: center;
+    font-size: 2em;
+  }
+
+  a {
+    color: white;
+  }
+}
